@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1050" width="1200" height="1050">
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #333; }
+    .title { font-size: 14px; font-weight: bold; fill: #1a1a2e; }
+    .label { font-size: 11px; fill: #666; }
+    .annotation { font-size: 10px; fill: #999; font-style: italic; }
+    .screen-title { font-size: 13px; font-weight: bold; fill: #333; }
+    .screen-body { font-size: 10px; fill: #555; }
+    .btn-text { font-size: 11px; fill: white; font-weight: bold; }
+    .header-text { font-size: 10px; fill: white; }
+    .hint { font-size: 8px; fill: #bbb; }
+  </style>
+
+  <rect width="1200" height="1050" fill="#f5f5f5" rx="8"/>
+
+  <text x="600" y="35" text-anchor="middle" class="title" font-size="18">103Legacy — Contributor Upload Flow (Wireframe)</text>
+  <text x="600" y="55" text-anchor="middle" class="annotation" font-size="12">Low-fidelity reference. Use your own judgment on visual design, spacing, and polish.</text>
+
+  <!-- ===== SCREEN 1: Landing ===== -->
+  <g transform="translate(20, 80)">
+    <text x="120" y="-8" text-anchor="middle" class="title">Screen 1: Landing</text>
+    <rect x="0" y="0" width="240" height="480" rx="16" fill="white" stroke="#ccc" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="30" rx="16" fill="#1a1a2e"/>
+    <rect x="0" y="16" width="240" height="14" fill="#1a1a2e"/>
+    <text x="120" y="20" text-anchor="middle" class="header-text">103Legacy</text>
+
+    <circle cx="120" cy="72" r="18" fill="none" stroke="#ddd" stroke-width="1.5"/>
+    <text x="120" y="77" text-anchor="middle" font-size="16">&#x2665;</text>
+
+    <text x="120" y="110" text-anchor="middle" class="screen-title">Record a message for</text>
+    <text x="120" y="128" text-anchor="middle" class="screen-title" font-size="16" fill="#1a1a2e">Grandma Rose</text>
+    <text x="120" y="148" text-anchor="middle" class="screen-body">80th Birthday</text>
+    <text x="120" y="163" text-anchor="middle" class="screen-body" fill="#999">Organized by Sarah</text>
+
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#eee" stroke-width="1"/>
+
+    <!-- Name field -->
+    <text x="28" y="202" class="label" font-size="9">Your name</text>
+    <rect x="28" y="207" width="184" height="28" rx="4" fill="white" stroke="#ccc"/>
+    <text x="38" y="225" class="screen-body" fill="#bbb">Enter your name</text>
+
+    <!-- Caption field -->
+    <text x="28" y="252" class="label" font-size="9">Caption for your video</text>
+    <text x="28" y="263" class="hint">This text appears as a subtitle when your clip plays</text>
+    <rect x="28" y="268" width="184" height="40" rx="4" fill="white" stroke="#ccc"/>
+    <text x="38" y="284" class="screen-body" fill="#bbb">e.g. "Happy birthday from</text>
+    <text x="38" y="296" class="screen-body" fill="#bbb">the whole family!"</text>
+    <text x="212" y="316" text-anchor="end" class="hint">0 / 120</text>
+
+    <!-- Buttons -->
+    <rect x="28" y="332" width="184" height="34" rx="6" fill="#1a1a2e"/>
+    <text x="120" y="354" text-anchor="middle" class="btn-text" font-size="10">Record Video</text>
+
+    <rect x="28" y="376" width="184" height="34" rx="6" fill="white" stroke="#1a1a2e" stroke-width="1.5"/>
+    <text x="120" y="398" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a2e">Choose from Camera Roll</text>
+
+    <!-- Skip caption -->
+    <text x="120" y="435" text-anchor="middle" class="screen-body" fill="#999" font-size="9">Skip caption (not recommended)</text>
+
+    <!-- Annotations -->
+    <line x1="250" y1="285" x2="278" y2="285" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="275" class="annotation">Multi-line input with</text>
+    <text x="283" y="288" class="annotation">120 char limit + live</text>
+    <text x="283" y="301" class="annotation">character count</text>
+
+    <line x1="250" y1="345" x2="278" y2="345" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="340" class="annotation">Trigger native camera</text>
+    <text x="283" y="353" class="annotation">on mobile</text>
+
+    <line x1="250" y1="435" x2="278" y2="435" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="430" class="annotation">Allow skip, but nudge</text>
+    <text x="283" y="443" class="annotation">them to add one</text>
+  </g>
+
+  <!-- ===== SCREEN 2: Uploading ===== -->
+  <g transform="translate(410, 80)">
+    <text x="120" y="-8" text-anchor="middle" class="title">Screen 2: Uploading</text>
+    <rect x="0" y="0" width="240" height="480" rx="16" fill="white" stroke="#ccc" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="30" rx="16" fill="#1a1a2e"/>
+    <rect x="0" y="16" width="240" height="14" fill="#1a1a2e"/>
+    <text x="120" y="20" text-anchor="middle" class="header-text">103Legacy</text>
+
+    <text x="120" y="70" text-anchor="middle" class="screen-title">Uploading your video...</text>
+
+    <!-- Video thumbnail -->
+    <rect x="50" y="85" width="140" height="94" rx="6" fill="#f0f0f0" stroke="#ddd"/>
+    <text x="120" y="137" text-anchor="middle" font-size="20" fill="#ccc">&#x25B6;</text>
+
+    <!-- Caption preview overlay on thumbnail -->
+    <rect x="50" y="155" width="140" height="24" rx="0 0 6 6" fill="rgba(0,0,0,0.6)"/>
+    <text x="120" y="170" text-anchor="middle" font-size="9" fill="white">"Happy birthday from the family!"</text>
+
+    <!-- Progress -->
+    <text x="120" y="205" text-anchor="middle" class="screen-body">birthday_message.mov</text>
+    <rect x="30" y="215" width="180" height="8" rx="4" fill="#eee"/>
+    <rect x="30" y="215" width="117" height="8" rx="4" fill="#1a1a2e"/>
+    <text x="120" y="240" text-anchor="middle" class="screen-body" font-weight="bold">65%</text>
+    <text x="120" y="255" text-anchor="middle" class="screen-body" fill="#999">42 MB of 64 MB &#x2022; ~30s remaining</text>
+
+    <text x="120" y="290" text-anchor="middle" class="screen-body" font-size="9" fill="#999">Please keep this page open</text>
+    <text x="120" y="305" text-anchor="middle" class="screen-body" font-size="9" fill="#999">until the upload is complete.</text>
+
+    <text x="120" y="345" text-anchor="middle" class="screen-body" fill="#c0392b" font-size="9">Cancel upload</text>
+
+    <!-- Annotations -->
+    <line x1="250" y1="163" x2="278" y2="163" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="153" class="annotation">Caption previewed on</text>
+    <text x="283" y="166" class="annotation">the video thumbnail so</text>
+    <text x="283" y="179" class="annotation">contributor can see how</text>
+    <text x="283" y="192" class="annotation">it will look</text>
+
+    <line x1="250" y1="230" x2="278" y2="230" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="225" class="annotation">Real-time progress with</text>
+    <text x="283" y="238" class="annotation">% + file size + time est.</text>
+  </g>
+
+  <!-- ===== SCREEN 3: Success ===== -->
+  <g transform="translate(800, 80)">
+    <text x="120" y="-8" text-anchor="middle" class="title">Screen 3: Success</text>
+    <rect x="0" y="0" width="240" height="480" rx="16" fill="white" stroke="#ccc" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="30" rx="16" fill="#1a1a2e"/>
+    <rect x="0" y="16" width="240" height="14" fill="#1a1a2e"/>
+    <text x="120" y="20" text-anchor="middle" class="header-text">103Legacy</text>
+
+    <circle cx="120" cy="95" r="28" fill="none" stroke="#2d7d46" stroke-width="2"/>
+    <text x="120" y="103" text-anchor="middle" font-size="26" fill="#2d7d46">&#x2713;</text>
+
+    <text x="120" y="148" text-anchor="middle" class="screen-title">You're all set!</text>
+    <text x="120" y="170" text-anchor="middle" class="screen-body">Your video message for</text>
+    <text x="120" y="185" text-anchor="middle" class="screen-body" font-weight="bold">Grandma Rose</text>
+    <text x="120" y="200" text-anchor="middle" class="screen-body">has been received.</text>
+
+    <!-- Saved summary card -->
+    <rect x="25" y="220" width="190" height="80" rx="6" fill="#f8f8f0" stroke="#e8e8d8"/>
+    <text x="120" y="240" text-anchor="middle" class="screen-body" font-size="9" fill="#888">Your caption:</text>
+    <text x="120" y="258" text-anchor="middle" class="screen-body" font-size="10" font-weight="bold" fill="#333">"Happy birthday from</text>
+    <text x="120" y="272" text-anchor="middle" class="screen-body" font-size="10" font-weight="bold" fill="#333">the whole family!"</text>
+    <text x="120" y="292" text-anchor="middle" class="screen-body" font-size="8" fill="#1a1a2e">Edit caption</text>
+
+    <!-- Warm message -->
+    <text x="120" y="330" text-anchor="middle" class="screen-body" font-size="9" fill="#666">She's going to love hearing</text>
+    <text x="120" y="345" text-anchor="middle" class="screen-body" font-size="9" fill="#666">from you. Thank you for being</text>
+    <text x="120" y="360" text-anchor="middle" class="screen-body" font-size="9" fill="#666">part of this moment. &#x2665;</text>
+
+    <!-- Annotations -->
+    <line x1="250" y1="252" x2="278" y2="252" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="242" class="annotation">Show saved caption back</text>
+    <text x="283" y="255" class="annotation">to contributor for peace</text>
+    <text x="283" y="268" class="annotation">of mind + edit option</text>
+
+    <line x1="250" y1="340" x2="278" y2="340" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="335" class="annotation">Warm, emotional tone.</text>
+    <text x="283" y="348" class="annotation">This is a gift, not a</text>
+    <text x="283" y="361" class="annotation">form submission.</text>
+  </g>
+
+  <!-- ===== SCREEN 4: Error State ===== -->
+  <g transform="translate(20, 600)">
+    <text x="120" y="-8" text-anchor="middle" class="title">Screen 4: Error state</text>
+    <rect x="0" y="0" width="240" height="410" rx="16" fill="white" stroke="#ccc" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="30" rx="16" fill="#1a1a2e"/>
+    <rect x="0" y="16" width="240" height="14" fill="#1a1a2e"/>
+    <text x="120" y="20" text-anchor="middle" class="header-text">103Legacy</text>
+
+    <circle cx="120" cy="75" r="22" fill="none" stroke="#c0392b" stroke-width="2"/>
+    <text x="120" y="82" text-anchor="middle" font-size="20" fill="#c0392b">!</text>
+
+    <text x="120" y="118" text-anchor="middle" class="screen-title" fill="#c0392b">Upload didn't go through</text>
+
+    <rect x="25" y="130" width="190" height="60" rx="6" fill="#fef5f5"/>
+    <text x="120" y="150" text-anchor="middle" class="screen-body" font-size="9">Your video file is too large</text>
+    <text x="120" y="165" text-anchor="middle" class="screen-body" font-size="9">(247 MB). Try recording a</text>
+    <text x="120" y="180" text-anchor="middle" class="screen-body" font-size="9">shorter clip or lowering quality.</text>
+
+    <!-- Caption preserved notice -->
+    <rect x="25" y="200" width="190" height="30" rx="4" fill="#f0f8f0"/>
+    <text x="120" y="219" text-anchor="middle" class="screen-body" font-size="8" fill="#2d7d46">&#x2713; Your caption has been saved</text>
+
+    <rect x="30" y="245" width="180" height="34" rx="6" fill="#1a1a2e"/>
+    <text x="120" y="267" text-anchor="middle" class="btn-text" font-size="10">Try Again</text>
+
+    <text x="120" y="300" text-anchor="middle" class="screen-body" fill="#1a1a2e" font-size="9">Choose a different video</text>
+
+    <text x="120" y="350" text-anchor="middle" class="screen-body" font-size="8" fill="#999">Having trouble? Text Sarah at</text>
+    <text x="120" y="363" text-anchor="middle" class="screen-body" font-size="8" fill="#1a1a2e">(555) 123-4567</text>
+
+    <!-- Annotations -->
+    <line x1="250" y1="215" x2="278" y2="215" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="205" class="annotation">Caption is preserved on</text>
+    <text x="283" y="218" class="annotation">retry so contributor</text>
+    <text x="283" y="231" class="annotation">doesn't have to retype it</text>
+
+    <line x1="250" y1="155" x2="278" y2="155" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="283" y="145" class="annotation">Specific error + human-</text>
+    <text x="283" y="158" class="annotation">readable recovery action</text>
+  </g>
+
+  <!-- ===== BOTTOM: Dashboard wireframe ===== -->
+  <g transform="translate(410, 600)">
+    <text x="385" y="-8" text-anchor="middle" class="title" font-size="16">Organizer dashboard (desktop)</text>
+
+    <rect x="0" y="0" width="770" height="410" rx="8" fill="white" stroke="#ccc" stroke-width="1.5"/>
+    <!-- Browser bar -->
+    <rect x="0" y="0" width="770" height="30" rx="8" fill="#f0f0f0"/>
+    <rect x="0" y="24" width="770" height="6" fill="#f0f0f0"/>
+    <circle cx="18" cy="15" r="5" fill="#ff5f57"/>
+    <circle cx="35" cy="15" r="5" fill="#febc2e"/>
+    <circle cx="52" cy="15" r="5" fill="#28c840"/>
+    <rect x="160" y="7" width="260" height="16" rx="3" fill="white" stroke="#ddd"/>
+    <text x="290" y="19" text-anchor="middle" font-size="8" fill="#999">localhost:5173/dashboard/test-card-001</text>
+
+    <!-- Header -->
+    <text x="30" y="58" class="screen-title" font-size="14">Grandma Rose's 80th Birthday Card</text>
+    <text x="30" y="74" class="screen-body" fill="#999">Organized by Sarah &#x2022; Created Jan 15, 2026</text>
+
+    <!-- Stats row -->
+    <rect x="30" y="88" width="120" height="48" rx="6" fill="#f8f8f8"/>
+    <text x="90" y="107" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">4</text>
+    <text x="90" y="125" text-anchor="middle" class="screen-body" font-size="8" fill="#999">Videos received</text>
+
+    <rect x="165" y="88" width="120" height="48" rx="6" fill="#f8f8f8"/>
+    <text x="225" y="107" text-anchor="middle" font-size="20" font-weight="bold" fill="#b8860b">3</text>
+    <text x="225" y="125" text-anchor="middle" class="screen-body" font-size="8" fill="#999">Pending</text>
+
+    <rect x="300" y="88" width="120" height="48" rx="6" fill="#f8f8f8"/>
+    <text x="360" y="107" text-anchor="middle" font-size="20" font-weight="bold" fill="#c0392b">1</text>
+    <text x="360" y="125" text-anchor="middle" class="screen-body" font-size="8" fill="#999">Failed</text>
+
+    <rect x="435" y="88" width="120" height="48" rx="6" fill="#f8f8f8"/>
+    <text x="495" y="107" text-anchor="middle" font-size="20" font-weight="bold" fill="#c0392b">1</text>
+    <text x="495" y="125" text-anchor="middle" class="screen-body" font-size="8" fill="#999">Missing caption</text>
+
+    <!-- Progress bar -->
+    <rect x="575" y="93" width="170" height="10" rx="5" fill="#eee"/>
+    <rect x="575" y="93" width="85" height="10" rx="5" fill="#2d7d46"/>
+    <text x="750" y="93" font-size="10" fill="#2d7d46" font-weight="bold">50%</text>
+    <text x="575" y="122" class="screen-body" font-size="8" fill="#999">4 of 8 contributors submitted</text>
+
+    <!-- Table header -->
+    <text x="30" y="160" class="screen-title" font-size="11">Contributors</text>
+    <rect x="30" y="168" width="710" height="22" fill="#f5f5f5"/>
+    <text x="42" y="183" class="label" font-size="8">NAME</text>
+    <text x="140" y="183" class="label" font-size="8">STATUS</text>
+    <text x="225" y="183" class="label" font-size="8">CAPTION</text>
+    <text x="440" y="183" class="label" font-size="8">FILE</text>
+    <text x="580" y="183" class="label" font-size="8">UPLOADED</text>
+    <text x="675" y="183" class="label" font-size="8">ACTIONS</text>
+
+    <!-- Row 1: complete with caption -->
+    <text x="42" y="208" class="screen-body">Uncle Mike</text>
+    <rect x="140" y="196" width="55" height="16" rx="8" fill="#e8f5e9"/>
+    <text x="167" y="208" text-anchor="middle" font-size="8" fill="#2d7d46">Received</text>
+    <text x="225" y="208" class="screen-body" font-size="9">"Happy 80th, Mom! We love you"</text>
+    <text x="440" y="208" class="screen-body" font-size="8">birthday_msg.mov (64MB)</text>
+    <text x="580" y="208" class="screen-body" font-size="8">2 hours ago</text>
+
+    <!-- Row 2: complete with caption -->
+    <text x="42" y="232" class="screen-body">Aunt Lisa</text>
+    <rect x="140" y="220" width="55" height="16" rx="8" fill="#e8f5e9"/>
+    <text x="167" y="232" text-anchor="middle" font-size="8" fill="#2d7d46">Received</text>
+    <text x="225" y="232" class="screen-body" font-size="9">"From your favorite daughter!"</text>
+    <text x="440" y="232" class="screen-body" font-size="8">IMG_2847.MOV (128MB)</text>
+    <text x="580" y="232" class="screen-body" font-size="8">5 hours ago</text>
+
+    <!-- Row 3: complete but NO caption — warning -->
+    <text x="42" y="256" class="screen-body">Cousin Jake</text>
+    <rect x="140" y="244" width="55" height="16" rx="8" fill="#e8f5e9"/>
+    <text x="167" y="256" text-anchor="middle" font-size="8" fill="#2d7d46">Received</text>
+    <rect x="225" y="244" width="90" height="16" rx="8" fill="#fff3e0"/>
+    <text x="270" y="256" text-anchor="middle" font-size="8" fill="#b8860b">No caption</text>
+    <text x="440" y="256" class="screen-body" font-size="8">VID_20260210.mp4 (42MB)</text>
+    <text x="580" y="256" class="screen-body" font-size="8">1 day ago</text>
+    <rect x="675" y="244" width="55" height="16" rx="4" fill="white" stroke="#b8860b"/>
+    <text x="702" y="256" text-anchor="middle" font-size="7" fill="#b8860b">Nudge</text>
+
+    <!-- Row 4: pending -->
+    <text x="42" y="280" class="screen-body" fill="#999">Cousin Tommy</text>
+    <rect x="140" y="268" width="55" height="16" rx="8" fill="#fff3e0"/>
+    <text x="167" y="280" text-anchor="middle" font-size="8" fill="#b8860b">Pending</text>
+    <text x="225" y="280" class="screen-body" font-size="9" fill="#999">&#x2014;</text>
+    <text x="440" y="280" class="screen-body" font-size="8" fill="#999">&#x2014;</text>
+    <text x="580" y="280" class="screen-body" font-size="8" fill="#999">Link opened 1 day ago</text>
+    <rect x="675" y="268" width="55" height="16" rx="4" fill="white" stroke="#1a1a2e"/>
+    <text x="702" y="280" text-anchor="middle" font-size="7" fill="#1a1a2e">Remind</text>
+
+    <!-- Row 5: failed -->
+    <text x="42" y="304" class="screen-body">Grandpa Ed</text>
+    <rect x="140" y="292" width="55" height="16" rx="8" fill="#ffebee"/>
+    <text x="167" y="304" text-anchor="middle" font-size="8" fill="#c0392b">Failed</text>
+    <text x="225" y="304" class="screen-body" font-size="9" fill="#999">&#x2014;</text>
+    <text x="440" y="304" class="screen-body" font-size="8" fill="#c0392b">video.avi &#x2014; format error</text>
+    <text x="580" y="304" class="screen-body" font-size="8">3 hours ago</text>
+    <rect x="675" y="292" width="55" height="16" rx="4" fill="white" stroke="#1a1a2e"/>
+    <text x="702" y="304" text-anchor="middle" font-size="7" fill="#1a1a2e">Remind</text>
+
+    <!-- Compile button area -->
+    <line x1="30" y1="325" x2="740" y2="325" stroke="#eee" stroke-width="1"/>
+    <rect x="30" y="340" width="155" height="34" rx="6" fill="#1a1a2e"/>
+    <text x="107" y="362" text-anchor="middle" class="btn-text" font-size="10">Compile Card Video</text>
+
+    <!-- Compile warning -->
+    <rect x="200" y="340" width="260" height="34" rx="6" fill="#fff8e1"/>
+    <text x="215" y="356" class="screen-body" font-size="8" fill="#b8860b">&#x26A0; 1 video has no caption. The compiled video</text>
+    <text x="215" y="368" class="screen-body" font-size="8" fill="#b8860b">will show only the contributor's name for that clip.</text>
+
+    <!-- Annotations outside the browser -->
+    <line x1="557" y1="108" x2="770" y2="108" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="772" y="103" class="annotation">"Missing caption" stat</text>
+    <text x="772" y="116" class="annotation">highlights a fulfillment gap</text>
+
+    <line x1="735" y1="254" x2="770" y2="254" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="772" y="249" class="annotation">Nudge = ask contributor</text>
+    <text x="772" y="262" class="annotation">to add their caption</text>
+
+    <line x1="455" y1="357" x2="770" y2="340" stroke="#bbb" stroke-dasharray="3"/>
+    <text x="772" y="330" class="annotation">Warning before compile</text>
+    <text x="772" y="343" class="annotation">so organizer knows about</text>
+    <text x="772" y="356" class="annotation">missing captions upfront</text>
+  </g>
+</svg>
